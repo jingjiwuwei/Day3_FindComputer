@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Predicate;
 
+
+//该类在设计时严格按照SRP的模式进行了设计，包括获取和设置品牌，类别和CPU类型在内的多个函数按照单一责任原则进行划分
 public class InstrumentSpec {
     private Map<String, Object> properties = new HashMap<>();
 

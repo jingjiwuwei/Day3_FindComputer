@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//检索条件和搜索结果按照功能进行了分别的封装，符合单一责任原则
 public class Inventory {
     private static List<Instrument> inventory;
 

@@ -27,12 +27,12 @@ public class Instrument {
         return spec;
     }
 
-    String getDescription() {
-        String instrumentClass = getOrDefault(spec.getInstrumentClass());
-        String instrumentBand  = getOrDefault(spec.getInstrumentBrand());
-        String instrumentCPU = getOrDefault(spec.getInstrumentCPU());
-        return instrumentClass+" "+instrumentBand+" "+instrumentCPU ;
-    }
+//    String getDescription() {
+//        String instrumentClass = getOrDefault(spec.getInstrumentClass());
+//        String instrumentBand  = getOrDefault(spec.getInstrumentBrand());
+//        String instrumentCPU = getOrDefault(spec.getInstrumentCPU());
+//        return instrumentClass+" "+instrumentBand+" "+instrumentCPU ;
+//    }
 
     private String getOrDefault(Enum item) {
         return item == null ? "" : (item.toString() + " ");
